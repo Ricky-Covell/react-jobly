@@ -1,0 +1,23 @@
+                                |App| <---> |joblyApi|
+                                  |                               
+                                  |
+                               |Navbar|                               
+                                  |          |----|Signup|---|SignupForm|                                                                               
+                                |Home|-------|
+                                  |          |----|Login|----|LoginForm|               
+                                  |        
+                                  |        
+                                  |                                                                                                   
+        |SearchPage|-------------------------------------|Profile|
+             |                                               |
+        |SearchBar|                                          |
+             |                                        |ProfileEditForm|
+             |                                    
+   |Jobs|---------|Companies|                        
+     |                 |
+     |                 |
+   |Job| --------> |Company|  
+                      
+      
+             
+            

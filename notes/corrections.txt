@@ -1,0 +1,19 @@
+• In backend/db.js:
+    - Had to change 
+
+        connectionString: getDatabaseUri()
+                    TO
+        connectionString: `postgresql:///${getDatabaseUri()}`
+    
+      or the server would throw a DNS error:        
+        Error: getaddrinfo ENOTFOUND base
+
+• I wasn't able to find an API point for getting jobs by company handle?
+
+
+
+• The provided /companies GET route has a mistake within the optional query params.
+    -The docstrings within companies.js specify 'nameLike' as the query param for filtering by name
+    -The Company model within company.js instead expects 'name' 
+    -This is also present within the demo site, as the company search bar is broken
+    
